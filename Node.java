@@ -1,4 +1,4 @@
-package ProjetoSimples;
+package projetosimples;
 
 public class Node {
 

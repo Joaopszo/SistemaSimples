@@ -1,8 +1,8 @@
-package ProjetoSimples;
+package projetosimples;
 
 public class Noticia extends Lista {
 
-    protected int imagemAtual = 0;
+    protected int imagemAtual = -1;
     protected String titulo;
 
     protected Noticia ( String titulo ){
@@ -40,7 +40,13 @@ public class Noticia extends Lista {
     protected void removerImagem(){
 
         this.removeData(imagemAtual);
-        imagemAtual = 0;
+        imagemAtual = -1;
+
+    }
+
+    protected void resetImagemAtual(){
+
+        this.imagemAtual = -1;
 
     }
 

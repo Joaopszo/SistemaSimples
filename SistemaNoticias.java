@@ -1,8 +1,8 @@
-package ProjetoSimples;
+package projetosimples;
 
 public class SistemaNoticias extends Lista {
 
-    protected int categoriaAtual = 0;
+    protected int categoriaAtual = -1;
 
     protected void addCategoria ( Categoria categoria ){
 
@@ -33,7 +33,7 @@ public class SistemaNoticias extends Lista {
     protected void removerCategoria(){
 
         this.removeData(categoriaAtual);
-        categoriaAtual = 0;
+        categoriaAtual = -1;
 
     }
 }

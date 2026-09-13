@@ -1,4 +1,4 @@
-package ProjetoSimples;
+package projetosimples;
 
 class Lista {
 
@@ -84,6 +84,9 @@ class Lista {
 
             this.begin = null;
             this.end = null;
+            aux.back = null;
+            aux.next = null;
+            aux.data = null;
             return;
 
         }
@@ -102,6 +105,10 @@ class Lista {
             this.end = aux.back;
 
         }
+
+        aux.back = null;
+        aux.next = null;
+        aux.data = null;
 
     }
 

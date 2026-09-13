@@ -1,9 +1,9 @@
-package ProjetoSimples;
+package projetosimples;
 
 public class Categoria extends Lista {
 
     protected String titulo;
-    protected int noticiaAtual = 0;
+    protected int noticiaAtual = -1;
 
     protected Categoria(String titulo){
 
@@ -40,7 +40,13 @@ public class Categoria extends Lista {
     protected void removerNoticia(){
 
         this.removeData(noticiaAtual);
-        noticiaAtual = 0;
+        noticiaAtual = -1;
+
+    }
+
+    protected void resetNoticiaAtual(){
+
+        this.noticiaAtual = -1;
 
     }
 
